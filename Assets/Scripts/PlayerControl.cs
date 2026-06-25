@@ -28,7 +28,13 @@ public class PlayerControl : MonoBehaviour
 
     void horizontalMovement()
     {
-        float input = Input.GetAxisRaw("Horizontal") * MoveSpeed;
+        if (Dialoguemanager.instance.IsDialogueActive())
+        {
+            RBD.linearVelocity = new Vector2(0, 0);
+            return;
+        }
+
+            float input = Input.GetAxisRaw("Horizontal") * MoveSpeed;
         float currentdeccelration;
         if (isGrounded)
         {
@@ -51,6 +57,8 @@ public class PlayerControl : MonoBehaviour
 
     void Jump()
     {
+        if (Dialoguemanager.instance.IsDialogueActive()) return;
+
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded==true)
         {
             RBD.linearVelocity= new Vector2(RBD.linearVelocity.x, JumpSpeed);
