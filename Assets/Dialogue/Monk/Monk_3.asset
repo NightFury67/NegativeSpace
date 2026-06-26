@@ -12,12 +12,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 485d5921c3c3316468c06692dcaf7421, type: 3}
   m_Name: Monk_3
   m_EditorClassIdentifier: Assembly-CSharp::DialogueHolder
-  Speaker: Monk
   lines:
-  - This my child is called a Negative Space
-  - Yes dont repeat what i said and jst listen you dont have much time kid
-  - Negative Space is born from you losing your consioucness to your emotions, this
-    cave amplifies that effect
-  - If you dont find peices of your conciousness scattered around before the emotion
-    destroys you will die
-  - Go, what are you waiting for
+  - Speaker: Player
+    lines: what is this place
+  - Speaker: Monk
+    lines: A negative space
+  - Speaker: Player
+    lines: ' Negtive space'
+  - Speaker: monk
+    lines: dont fuking repeat what im sying
+  - Speaker: monnk
+    lines: negative space exist inside your mind
+  - Speaker: monnk
+    lines: this cave triggers them and splits yoou consciousness
+  - Speaker: monnk
+    lines: if you dont collect peices of your conciousness before your emotions destroys
+      them...
+  - Speaker: monnk
+    lines: youll die
+  - Speaker: monnk
+    lines: what are you waiting go collect them

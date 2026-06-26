@@ -10,6 +10,10 @@ public class DialogueTrigger : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Main-Cave" && trigggerposition < SessionData.ReturnPosition.x)
+        {
+            isTriggered = true;
+        }
         player = GameObject.FindWithTag("Player").transform;
     }
 

@@ -15,7 +15,7 @@ public class Dialoguemanager : MonoBehaviour
 
     private bool isTyping = false;
     private bool DialogueActive = false;
-    private string[] currentline;
+    private DialogueLine[] currentline;
     private int LineIndex = 0;
 
     private float dialogueEndTime = 0f;
@@ -38,7 +38,7 @@ public class Dialoguemanager : MonoBehaviour
             if (isTyping)
             {
                 StopAllCoroutines();
-                dialogue.text = currentline[LineIndex];
+                dialogue.text = currentline[LineIndex].lines;
                 isTyping = false;
             }
 
@@ -67,7 +67,6 @@ public class Dialoguemanager : MonoBehaviour
     {
         DialogueActive = true;
         currentline = data.Lines;
-        speaker.text = data.Speakername;
         LineIndex = 0;
         Dialoguepanel.SetActive(true);
         StartCoroutine(typeLine());
@@ -76,14 +75,16 @@ public class Dialoguemanager : MonoBehaviour
     IEnumerator typeLine()
     {
         isTyping = true;
+        speaker.text = currentline[LineIndex].Speaker;
         dialogue.text = "";
-        foreach (char letter in currentline[LineIndex])
+        foreach (char letter in currentline[LineIndex].lines)  
         {
             dialogue.text += letter;
             yield return new WaitForSeconds(TypeSpeed);
         }
         isTyping = false;
     }
+
 
     void endDialogue()
     {

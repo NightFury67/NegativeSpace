@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UIElements;
+using UnityEngine.SceneManagement;
 
 public class PlayerControl : MonoBehaviour
 {
@@ -13,9 +14,18 @@ public class PlayerControl : MonoBehaviour
     private bool isGrounded;
     [SerializeField] private float Airdeccelration = 1f;
     [SerializeField] private float Grounddeccelration = 5f;
+
+    //public float Playerposition;
     void Start()
     {
         RBD=GetComponent<Rigidbody2D>();
+        if (SessionData.ReturningFromNegativeSpace == true && UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Main-Cave")
+        {
+            transform.position = SessionData.ReturnPosition;
+            SessionData.ReturningFromNegativeSpace = false;
+            //Debug.Log("ReturningFromNegativeSpace: " + SessionData.ReturningFromNegativeSpace);
+            //Debug.Log("ReturnPosition: " + SessionData.ReturnPosition);
+        }
     }
 
     // Update is called once per frame
@@ -64,4 +74,6 @@ public class PlayerControl : MonoBehaviour
             RBD.linearVelocity= new Vector2(RBD.linearVelocity.x, JumpSpeed);
         }
     }
+
+    
 }

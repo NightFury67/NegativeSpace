@@ -12,10 +12,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 485d5921c3c3316468c06692dcaf7421, type: 3}
   m_Name: Monk_1
   m_EditorClassIdentifier: Assembly-CSharp::DialogueHolder
-  Speaker: Monk
   lines:
-  - Lol! Another Fool
-  - Its an unescapable cave
-  - What about Unescapable dont you understand
-  - Ughhhh!!!!  Many people have tried
-  - Only I ever conquered this cave
+  - Speaker: Player
+    lines: Where am I
+  - Speaker: Monk
+    lines: Ah look another fool fell in
+  - Speaker: Player
+    lines: 'What is this place '
+  - Speaker: Monk
+    lines: An inescabale cave
+  - Speaker: player
+    lines: what.. i need to get out of here
+  - Speaker: monk
+    lines: What about inescapable you dont understand
+  - Speaker: monk
+    lines: no one ever manegd to get out other than 1
+  - Speaker: player
+    lines: how do you know that and who got out
+  - Speaker: Monk
+    lines: how do i know that
+  - Speaker: Monk
+    lines: Cause im the only one who ever conquerede this cave
