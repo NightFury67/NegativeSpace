@@ -7,6 +7,8 @@ public class DialogueTrigger : MonoBehaviour
     [SerializeField] private bool leftrigger = true;
     private bool isTriggered = false;
     private Transform player;
+
+    [SerializeField] private Rigidbody2D RBD;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -28,7 +30,9 @@ public class DialogueTrigger : MonoBehaviour
         bool passed = leftrigger ? player.position.x>=trigggerposition : player.position.x<trigggerposition;
 
         if (passed) {
+            
             isTriggered = true;
+            RBD.linearVelocity = Vector2.zero;
             Dialoguemanager.instance.startdialogue(data);
         }
     }

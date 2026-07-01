@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 485d5921c3c3316468c06692dcaf7421, type: 3}
+  m_Name: Player 1
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueAssetCreator
+  lines:
+  - Speaker: 'Player:'
+    lines: And what the deal with that Crazy bastard?
+  - Speaker: 'Player:'
+    lines: Ooh its an Inescaapable Cave
+  - Speaker: 'Player:'
+    lines: Watch my ass escape this you creepy fuck!!
+  - Speaker: 'Player:'
+    lines: 'Ughh!!! I am gonna kill someone!!! '
+  - Speaker: 'Player:'
+    lines: FUCK THISS SHITT!!!!!!

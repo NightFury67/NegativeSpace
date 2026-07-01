@@ -13,23 +13,43 @@ MonoBehaviour:
   m_Name: Monk_1
   m_EditorClassIdentifier: Assembly-CSharp::DialogueHolder
   lines:
-  - Speaker: Player
-    lines: Where am I
+  - Speaker: 'Player:'
+    lines: Where.. Where am I?
+  - Speaker: 'Monk:'
+    lines: Ah!! Another fool fell in
+  - Speaker: 'Player:'
+    lines: 'What... is this.. place..? '
+  - Speaker: 'Monk:'
+    lines: It's an in-escapable Cave my child.
+  - Speaker: 'Player:'
+    lines: WHatt??.. NOO!! I need to get out of here.
   - Speaker: Monk
-    lines: Ah look another fool fell in
-  - Speaker: Player
-    lines: 'What is this place '
-  - Speaker: Monk
-    lines: An inescabale cave
-  - Speaker: player
-    lines: what.. i need to get out of here
-  - Speaker: monk
-    lines: What about inescapable you dont understand
-  - Speaker: monk
-    lines: no one ever manegd to get out other than 1
-  - Speaker: player
-    lines: how do you know that and who got out
-  - Speaker: Monk
-    lines: how do i know that
-  - Speaker: Monk
-    lines: Cause im the only one who ever conquerede this cave
+    lines: Okay... What about inescapable you dont understand?
+  - Speaker: 'Monk:'
+    lines: It is an *inescapable cave*, no one ever escaped it...
+  - Speaker: 'Monk:'
+    lines: With the sole exception of Gojo Satoru ofcourse..
+  - Speaker: 'Player:'
+    lines: How do you know that?
+  - Speaker: 'Angry Monk:'
+    lines: How do I know that???
+  - Speaker: 'Angry Monk:'
+    lines: Cause I am the only one who ever conquered this cave!!
+  - Speaker: 'Angry Monk:'
+    lines: I was the one who guided the only person who got out!!
+  - Speaker: 'Player:'
+    lines: Can you help me?
+  - Speaker: 'Angry Monk:'
+    lines: Ofcourse I can... you just have to ask nicely.
+  - Speaker: 'Player:'
+    lines: Please help me I really need to get out.
+  - Speaker: 'Monk:'
+    lines: 'Okay, but to get out you have to master you emotions '
+  - Speaker: 'Player:'
+    lines: What does that mean?
+  - Speaker: 'Monk:'
+    lines: You will understand that.
+  - Speaker: 'Monk:'
+    lines: Now Go on, Use A & D or arrow  keys to move and Space to Jump.
+  - Speaker: 'Monk:'
+    lines: Also beware of those spikes! they will send you back to me.

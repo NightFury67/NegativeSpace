@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 485d5921c3c3316468c06692dcaf7421, type: 3}
+  m_Name: DEV_NOTE
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueAssetCreator
+  lines:
+  - Speaker: 'Dev_note:'
+    lines: Budget Khatam!
+  - Speaker: 'Dev_note:'
+    lines: Samay samapti ki Ghoshna
+  - Speaker: 'Dev_note:'
+    lines: Baaki Level baad me ayengi!
+  - Speaker: 'Dev_note:'
+    lines: Krodh, kaam, bhay, dukh lobh, anand, etc.
+  - Speaker: 'Dev_note:'
+    lines: Khair you can quit now
+  - Speaker: 'Dev_note:'
+    lines: Bye!.. And Thanks for Playing

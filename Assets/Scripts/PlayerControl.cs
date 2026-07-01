@@ -19,6 +19,11 @@ public class PlayerControl : MonoBehaviour
     void Start()
     {
         RBD=GetComponent<Rigidbody2D>();
+
+        if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "NegativeLevel-Anger")
+        {
+            transform.position = Vector2.zero;
+        }
         if (SessionData.ReturningFromNegativeSpace == true && UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Main-Cave")
         {
             transform.position = SessionData.ReturnPosition;
@@ -73,6 +78,25 @@ public class PlayerControl : MonoBehaviour
         {
             RBD.linearVelocity= new Vector2(RBD.linearVelocity.x, JumpSpeed);
         }
+    }
+
+    public void Respwan()
+    {
+        if (SceneManager.GetActiveScene().name == "NegativeLevel-Anger")
+        {
+            transform.position = Vector2.zero;
+            RBD.linearVelocity = Vector2.zero;
+        }
+        else 
+        {
+            transform.position = SessionData.ReturnPosition;
+            RBD.linearVelocity = Vector2.zero;
+        }
+    }
+
+    public void DeathinNL()
+    {
+
     }
 
     

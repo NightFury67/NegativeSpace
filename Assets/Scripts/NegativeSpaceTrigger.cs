@@ -9,6 +9,10 @@ public class NegativeSpaceTrigger : MonoBehaviour
     private Transform player;
     [SerializeField] private string Levelname;
 
+    [SerializeField] private float Countdown= 3f;
+    [SerializeField] private GameObject Transition;
+    public static bool starttrans = false;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -31,9 +35,17 @@ public class NegativeSpaceTrigger : MonoBehaviour
 
         if (passed==true)
         {
+            Countdown -= Time.deltaTime;
+            Transition.SetActive(true);
+            starttrans = true;
+            
             SessionData.ReturningFromNegativeSpace = true;
             SessionData.ReturnPosition = player.position;
-            SceneManager.LoadScene(Levelname);
+            if (Countdown <= 0)
+            {
+                SceneManager.LoadScene(Levelname);
+            }
+            
         }
 
     }

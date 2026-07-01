@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 485d5921c3c3316468c06692dcaf7421, type: 3}
+  m_Name: Player 4
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueAssetCreator
+  lines:
+  - Speaker: 'Player:'
+    lines: I COULD HAVE BEEN JUST CHILLING ON A BEACH
+  - Speaker: 'Player:'
+    lines: BUT NOW I HAVE TO LISTEN TO A CRAZY OLD FUCK
+  - Speaker: 'Player:'
+    lines: WHO TELLS ME THAT I HAVE TO MASTER MY FUCKING EMOTIONS
+  - Speaker: 'Player:'
+    lines: FUCK ME!! FUCK MY EMOTIONS.. I WANNA KILL SOMEONE GODDAMIT!!
+  - Speaker: 'Player:'
+    lines: I AM GONNA BLOW THIS WHOLE CAVE WITH C4 JUST LET ME OUT ONCE!!!!

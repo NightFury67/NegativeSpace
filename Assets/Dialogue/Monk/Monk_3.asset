@@ -13,22 +13,33 @@ MonoBehaviour:
   m_Name: Monk_3
   m_EditorClassIdentifier: Assembly-CSharp::DialogueHolder
   lines:
-  - Speaker: Player
-    lines: what is this place
-  - Speaker: Monk
-    lines: A negative space
-  - Speaker: Player
-    lines: ' Negtive space'
-  - Speaker: monk
-    lines: dont fuking repeat what im sying
-  - Speaker: monnk
-    lines: negative space exist inside your mind
-  - Speaker: monnk
-    lines: this cave triggers them and splits yoou consciousness
-  - Speaker: monnk
-    lines: if you dont collect peices of your conciousness before your emotions destroys
-      them...
-  - Speaker: monnk
-    lines: youll die
-  - Speaker: monnk
-    lines: what are you waiting go collect them
+  - Speaker: 'Player:'
+    lines: HHuh? Where Am I?
+  - Speaker: 'Monk:'
+    lines: A negative space!
+  - Speaker: 'Player:'
+    lines: ' Negative space??'
+  - Speaker: 'Angry Monk:'
+    lines: Don't Fucking repeat what I am saying!! Listen
+  - Speaker: 'Monk:'
+    lines: A Negative Space is a place that exists inside your mind.
+  - Speaker: 'Monk:'
+    lines: This Cave is a Physical Manifestation of that Space.
+  - Speaker: 'Monk:'
+    lines: 'When you lose control of your emotions, '
+  - Speaker: 'Monk:'
+    lines: The cave transports you to The Negative Space created by that Emotion
+  - Speaker: 'Monk:'
+    lines: This is the Physical Manifestation of you Krodh, your Anger.
+  - Speaker: 'Player:'
+    lines: So how do I get out?... By controlling my emotions?
+  - Speaker: 'Monk:'
+    lines: 'No, Once you are in a Negative Space that option is taken away from you '
+  - Speaker: 'Monk:'
+    lines: But there is a way...
+  - Speaker: 'Monk:'
+    lines: You have to collect the pieces of you scattered conscience..
+  - Speaker: 'Monk:'
+    lines: Within 1 Minute of entering Negative-Space
+  - Speaker: 'Monk:'
+    lines: Go you are running out of time
